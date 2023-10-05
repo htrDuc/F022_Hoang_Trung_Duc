@@ -17,6 +17,7 @@ const WalletPage: React.FC<Props> = (props: Props) => {
 
   // Don't use magic number and string, you can create enum or constants to make the core more maintainable, readable and reuseable
   // And this function independent in any state of WalletPage so we can move it out WalletPage
+  // Don't use any type for `blockchain` param
   const getPriority = (blockchain: any): number => {
     switch (blockchain) {
       case "Osmosis":
